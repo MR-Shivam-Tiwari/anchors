@@ -20,7 +20,12 @@ const corsOptions = {
 };
 
 
-app.use(cors(corsOptions));
+app.use(cors({
+  origin: ["https://anchorsfrontend-iota.vercel.app/"],
+  methods: ["POST", "GET"],
+  credentials: true
+}));
+
 app.use(bodyParser.json());
 
 MongoDB();
