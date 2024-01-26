@@ -13,7 +13,7 @@ function Dashboard() {
 
   const fetchPosts = async () => {
     try {
-      const response = await fetch("http://localhost:3002/get-posts");
+      const response = await fetch("https://anchorsbackend-seven.vercel.app/get-posts");
 
       if (response.ok) {
         const postsData = await response.json();
@@ -35,7 +35,7 @@ function Dashboard() {
 
   const handlePostSubmit = async () => {
     try {
-      const response = await fetch("http://localhost:3002/create-post", {
+      const response = await fetch("https://anchorsbackend-seven.vercel.app/create-post", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -99,7 +99,7 @@ function Dashboard() {
     const handleCommentSubmit = async () => {
       try {
         // Assuming you have an API endpoint for adding comments
-        await fetch(`http://localhost:3002/add-comment/${postId}`, {
+        await fetch(`https://anchorsbackend-seven.vercel.app/add-comment/${postId}`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
