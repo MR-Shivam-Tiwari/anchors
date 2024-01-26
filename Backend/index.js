@@ -25,7 +25,9 @@ app.use(bodyParser.json());
 
 MongoDB();
 
-
+app.get("/" , (req,res) =>{
+  res.json("hello");
+})
 
 app.post("/register", async (req, res) => {
   const { email, name } = req.body;
