@@ -27,7 +27,7 @@ function Otp() {
     try {
       console.log("Sending OTP verification request...");
 
-      const response = await fetch("http://localhost:3002/verify-otp", {
+      const response = await fetch("https://anchorsbackend-seven.vercel.app/verify-otp", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
