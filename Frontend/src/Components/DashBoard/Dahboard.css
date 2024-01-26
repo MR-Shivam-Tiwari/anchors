@@ -1,0 +1,84 @@
+iframe#webpack-dev-server-client-overlay{display:none!important}
+
+.btn {
+  padding: 15px 40px;
+  border: none;
+  outline: none;
+  position: relative;
+  z-index: 1;
+  border-radius: 8px;
+  background: linear-gradient(to right, #dc1fff, #3471e8);
+  cursor: pointer;
+  font-weight: bold;
+  color: gray;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  left: 1px;
+  right: 1px;
+  top: 1px;
+  bottom: 1px;
+  color: gray;
+  border-radius: 8px;
+  background-color: white;
+  z-index: -1;
+  transition: 200ms;
+}
+
+
+.slide-down-inputs {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50px; /* Adjust the top position as needed */
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  transition: transform 0.3s ease-in-out;
+  transform-origin: top center;
+}
+
+.slide-down-inputs input {
+  margin-bottom: 10px;
+}
+
+.slide-down-inputs.active {
+  transform: translateY(100%);
+}
+
+
+.btnadd {
+  padding: 15px 40px;
+  border: none;
+  outline: none;
+  position: relative;
+  z-index: 1;
+  border-radius: 6px;
+  background: linear-gradient(to right,  #d475d4 ,#7399f5);
+  cursor: pointer;
+  font-weight: bold;
+  color: gray;
+}
+.btnadd::before {
+  content: "";
+  position: absolute;
+  left: 5px;
+  right: 5px;
+  top: 5px;
+  bottom: 5px;
+  color: gray;
+  border-radius: 5px;
+  background-color: white;
+  z-index: -1;
+  transition: 200ms;
+}
+
+.input-container {
+  position: relative;
+}
+
+.shift-down {
+  transform: translateY(200px); /* Adjust the value as needed */
+}
