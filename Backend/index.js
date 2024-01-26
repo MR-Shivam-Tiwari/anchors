@@ -19,6 +19,7 @@ const corsOptions = {
   allowedHeaders: "Origin,X-Requested-With,Content-Type,Accept",
 };
 
+
 app.use(cors(corsOptions));
 app.use(bodyParser.json());
 
